@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+        <title>Chapter 3 Lab Solution</title>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            var age = 35; 
+            if(age < 18) {
+                document.write("You're just a pup!"); 
+            } else if(age >= 18 && age <= 29) {
+                document.write("Welcome to young adulthood... Have fun now (while you can!)"); 
+            } else if(age >= 30 && age <= 39) {
+                document.write("It's time to start getting serious about career and family"); 
+            } else if(age >= 40 && age <= 49) {
+                document.write("Time to start thinking about retirement. Make sure you're saving"); 
+            } else if(age >= 50 && age <= 59) {
+                document.write("Enjoy your life now! You've done well."); 
+            } else {
+                document.write("60 is the new 40. Do something exciting!"); 
+            }
+            
+            var discountCode = "C"; 
+            var discountRate; 
+            switch(discountCode) {
+                case "A":
+                case "a": 
+                    discountRate = 0.0325; 
+                    break; 
+                case "B":
+                case "b": 
+                    discountRate = 0.05;  
+                    break;
+                case "C":
+                case "c": 
+                    discountRate = 0.075; 
+                    break;
+                case "D":
+                case "d": 
+                    discountRate = 0.10; 
+                    break;
+                default:
+                    document.write("<br/>Discount Rate is not recognized"); 
+            }
+            var amountOfSale = 27.95; 
+            document.write("<br/>Amount of Sale: $" + (amountOfSale - (discountRate * amountOfSale ))); 
+        </script>
+    </body>
+</html>
