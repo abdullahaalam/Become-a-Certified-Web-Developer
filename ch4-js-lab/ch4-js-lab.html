@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+        <title>Dog Years Calculator</title>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            var confirmation; 
+            var dogAgeInHumanYears; 
+            dogAgeInHumanYears = 7; 
+            var dogAgeInDogYears; 
+            dogAgeInDogYears = prompt("What is your dog's age in human years?"); 
+            alert("Your dog is " + (dogAgeInDogYears * dogAgeInHumanYears) + " years old in dog years."); 
+            confirmation = confirm("Shall I exit the program?");  
+
+            if(confirmation) {
+                document.write("Exiting Dog Years Calculator"); 
+            } else {
+                document.write("Cancelling Exit"); 
+            }
+        </script>
+    </body>
+</html>
