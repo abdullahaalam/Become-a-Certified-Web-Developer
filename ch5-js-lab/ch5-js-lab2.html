@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+        <title>Chapter 5 Lab Solution 2</title>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            var interestRate = parseFloat(prompt("Enter Interest Rate as a decimal"));
+            var term = parseInt(prompt("Enter a number of months to invest"));
+            var totalMoney = parseInt(prompt("Amount invested"));
+            interestRate = interestRate / 12;
+            for(month = 1; month < term + 1; month++) {
+                document.write("<strong>Month: </strong>" + month + "<br/>");
+                var number = (totalMoney * interestRate / 100) * 100;
+                var n = number.toFixed(2);
+                document.write("Interest Earned: $" + n);
+                totalMoney = totalMoney + (totalMoney * interestRate);
+                document.write("<br/>");
+                document.write("Total Money: $" + Math.round(totalMoney * 100) / 100 + "<br/>");
+            }
+        </script>
+    </body>
+</html>
