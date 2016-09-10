@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>JavaScript Course: Chapter 7 Lab Exercise</title>
+        <script type="text/javascript">
+            function outputArray(theArray) {
+                for(var i = 0; i < theArray.length; i++) {
+                    document.write(theArray[i]);
+                    document.write("<br/>");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            // Standard Array
+            var placesToVisit = new Array(); // Instantiation of an Array() object
+            placesToVisit[0] = "New York";
+            placesToVisit[1] = "San Francisco";
+            placesToVisit[2] = "Orlando";
+            placesToVisit[3] = "Paris";
+            placesToVisit[4] = "Oklahoma";
+            placesToVisit[5] = "Munich";
+            placesToVisit[6] = "Cairo";
+            placesToVisit[7] = "Washington DC";
+            placesToVisit.push("Boise");
+            outputArray(placesToVisit);
+            document.write("<br/>");
+            placesToVisit.shift();
+            placesToVisit.shift();
+            outputArray(placesToVisit);
+            document.write("<br/>");
+            placesToVisit.sort();
+            outputArray(placesToVisit);
+        </script>
+    </body>
+</html>
